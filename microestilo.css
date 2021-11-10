@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	min-height: 100%;
+	background-color: #D980FA;
+}
+
+/* RELEVAMIENTO --------------------- */
+
+.contenedor{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido1 contenido1 	contenido1"  
+						 "footer footer	footer"; 
+}
+
+.contenedor .header{
+	background-color: #833471;
+	grid-area: header;
+}
+
+.logo{
+	width: 35%;
+	padding: 2%;
+	margin-top: 1%;
+	margin-left: 2%;
+}
+
+.contenedor  .navbar {
+	background-color: #833471;
+	grid-area:  navbar;
+}
+
+.contenedor .contenido1{
+	background-color: rgba(233, 195, 129, 0.8); 
+	grid-area: contenido1;
+}
+
+.contenedor .footer{
+	background-color: #ffbe76;
+	grid-area: footer;
+}
+
+.tp1{
+	font-family: 'Poppins', sans-serif;
+	color: #eb4d4b;
+	margin-top: 3%;
+	margin-left: 44%;
+	margin-bottom: 3%;
+}
+
+.pdf{
+	width: 600px;
+	height: 600px;
+	margin-left: 25%;
+	margin-bottom: 5%;
+}
+
+/* MENU ---------------- */
+
+.r-link{
+  display: inline-flex;
+}
+
+.r-link[href]{
+  color: #f5f6fa;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.r-list{
+  padding-left: 0;
+  margin-top: 2%;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.menu{
+  color: #f6e58d;
+}
+
+.menu__link{
+  display: block;
+}
+
+
+.menu:hover .menu__link:not(:hover){
+  color: #f5f6fa;
+}
+
+.menu{
+  background-color: #f0f0f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu__list{
+  display: flex;  
+}
+
+.menu__link{
+  padding: 2rem 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-underlined{
+  position: relative;
+  overflow: hidden;
+
+  will-change: color;
+  transition: color .25s ease-out;  
+}
+
+.text-underlined::before, 
+.text-underlined::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #f5f6fa;
+
+  will-change: width;
+  transition: width .1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.text-underlined::before{
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.text-underlined::after{
+  right: 50%;
+  transform: translateX(50%); 
+}
+
+.text-underlined:hover::before, 
+.text-underlined:hover::after{
+  width: 100%;
+  transition-duration: .2s;
+}
+
+.page__custom-settings{
+  background-color: #f6e58d;
+ 	color: #f6e58d;
+ 	color-: #f6e58d;
+  --menuLinkOutlineOffset: -.5rem; 
+}
+
+.page__menu:nth-child(n+2){
+  margin-top: 3rem;
+}
+
+/* FOOTER --------------------- */
+
+.nick{
+	width: 10%;
+	float: left;
+	margin-left: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.instagram{
+	width: 5%;
+	margin-top: 0.8%;
+	float: right;
+	margin-right: 3%;
+}
+
+.minombre{
+	text-decoration: none;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	margin-left: 33%;
+	float: left;
+	margin-top: 1%;
+}
+
+/* MEMORIA --------------------- */
+
+.contenedor2{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido2 contenido2 contenido2"  
+						 "footer footer	footer"; 
+}
+
+.contenedor2 .header{
+	background-color: #833471;
+	grid-area: header;
+}
+
+.logo{
+	width: 35%;
+	padding: 1%;
+	margin-top: 1%;
+}
+
+.contenedor2  .navbar {
+	background-color: #833471;
+	grid-area:  navbar;
+}
+
+.contenedor2 .contenido2{
+	background-color: rgba(233, 195, 129, 0.8); 
+	grid-area: contenido2;
+}
+
+.contenedor2 .footer{
+	background-color: #ffbe76;
+	grid-area: footer;
+}
+
+.paleta{
+	width: 750px;
+	margin-left: 5%;
+	margin-top: 1%;
+}
+
+.tipo{
+	width: 650px;
+	margin-left: 5%;
+	margin-top: 1%;
+}
+
+.tipografia{
+	font-family: 'Poppins', sans-serif;
+	color: #833471;
+	margin-top: 3%;
+	margin-left: 5%;
+}
+
+.colores{
+	font-family: 'Poppins', sans-serif;
+	color: #833471;
+	margin-top: 2%;
+	margin-left: 5%;
+
+}
+
+.morfo{
+	font-family: 'Poppins', sans-serif;
+	color: #833471;
+	margin-top: 3%;
+	margin-left: 5%;
+}
+
+.tmemoria{
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	margin-left: 5%;
+	margin-top: 1%;
+	margin-right: 5%;
+	margin-bottom: 3%;
+}
+
+.wire{
+	text-decoration: none;
+	color: #833471;
+}
